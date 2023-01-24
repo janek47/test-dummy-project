@@ -1,6 +1,18 @@
 public class Dummy {
-    public static void main(String[] args) {
-        System.out.println("Hello!");
-        System.out.println("Hello again");
+    public String reverseString (String word){
+
+        StringBuilder stringBuilder = new StringBuilder(word);
+        String reverseWord = stringBuilder.reverse().toString();
+
+        return reverseWord;
+
     }
+
+    public static void main(String[] args) {
+        Dummy dummy = new Dummy();
+        System.out.println(dummy.reverseString("Jane"));
+
+    }
+
+
 }
